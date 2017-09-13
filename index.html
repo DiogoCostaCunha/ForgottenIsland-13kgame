@@ -1,0 +1,77 @@
+<header>
+    <script src="./js/Classes/Map.js"></script>
+    <script src="./js/Classes/Player.js"></script>
+    <script src="./js/Classes/Enemies.js"></script>
+    <script src="./js/Classes/Bullets.js"></script>
+    <script src="./js/Classes/World.js"></script>
+    <script src="./js/Classes/UI.js"></script>
+    <script src="./js/Classes/Collectibles.js"></script>
+    <script src="./js/Classes/Finish.js"></script>
+    <script src="./js/Classes/Mp3.js"></script>
+    <script src="./js/Classes/Entity.js"></script>
+    <script src="./js/Boot.js"></script>
+    <script src="./js/Utils.js"></script>
+    <script src="./js/Main.js"></script>
+</header>
+
+<style> 
+    body {
+        background:black;
+        padding:0;
+        margin:0;
+    }
+    #gameWrapper {
+        position: relative;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    #gameCanvas {
+        position: absolute;
+        width: 100%;
+        border: 1px solid white;
+    }
+    #gameOptions-sizeDiv {
+        position: absolute;
+        top: 190px;
+        left: 130px;
+        color: white;
+        font-size: 27px;
+        font-family: "papyrus";
+    }
+    #gameOptions-sizeInput {
+        background: #4dff88;
+    }
+    #instructions {
+        text-align: center;
+        position: absolute;
+        top: 400px;
+        color: white;
+    }
+    #instructions-text {
+        visibility: hidden;
+    }
+</style>
+
+<body>   
+    <div id="gameWrapper"> 
+        <canvas id="gameCanvas" height="420px" width="420px"> </canvas>
+        <div id="gameOptions-sizeDiv" style="display:none">
+            <span id="gameOptions-sizeSpan" style="font-size:24px">Map Size   
+            </span>
+            <input id="gameOptions-sizeInput" type:"text" value="5" style="width:50px"></input>
+            <br>
+            <span style="font-size:18px; margin-left:35px">(4-20) </span> 
+        </div>
+        <div id="instructions"> 
+            <button style="margin-top: 10px" onclick="ShowHideInstructions();return false"> INSTRUCTIONS </button>
+            <div id = "instructions-text">
+                <p> Shooting, running and disguising use <span style="color:green">STAMINA</span>. Beware of the <span style="color:#b30000"> TURRETS </span> and <span style="color:red"> MOBS </span>. Some mobs leave <span style="color:green"> HP </span> or <span style="color:#66ffff">ATTACK BOOSTS</span> that you can pick.</p>
+                <p> While in <span style="color:#ff0080">DISGUISE</span> you won't suffer damage except from wall turrets.</p>
+                <p> <span style="color:green"> YOU </span> need to find all the <span style="color:#ffcc00"> COLLECTIBLES </span> so you can leave through the <span style="color:#004d00">EXIT</span> Do it as fast as possible and before losing your lives! </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
