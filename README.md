@@ -8,4 +8,4 @@ Instructions:
 - Pick all the collectibles as fast as you can. Then find the exit of the map so you can escape the island. Don't lose are your lives.
 
 Note:
-- worlds are randomly generate with a size that can go from 4*4 (16 maps) to 20*20 (400 maps)
+- worlds are randomly generate with a size that can go from 4x4 (16 maps) to 20x20 (400 maps)
